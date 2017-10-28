@@ -60,7 +60,7 @@ var Renderer = function () {
     // This value actually doesn't matter...
     // Just keep it big enough so that floating point arithmetic
     // doesn't strat fucking with the Hull algorithm
-    var hexradius = 15;
+    var hexradius = 10;
     
     // Useful values
     var HexW = hexradius * Math.cos(Math.PI / 4);
