@@ -72,7 +72,7 @@ function grid(points) {
     return new Grid(points);
 }
 
-Grid.CELL_SIZE = 15;
+Grid.CELL_SIZE = 5;
 
 module.exports = grid;
 },{}],2:[function(require,module,exports){
