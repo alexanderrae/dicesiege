@@ -63,7 +63,7 @@ var Renderer = function () {
     var hexradius = 10;
     
     // Useful values
-    var HexW = hexradius * Math.cos(Math.PI / 4);
+    var HexW = hexradius * Math.cos(Math.PI / 6);
     var HexH = hexradius * Math.sin(Math.PI / 6);
 
     // ---- ACTUAL RENDERING METHODS ---- //
