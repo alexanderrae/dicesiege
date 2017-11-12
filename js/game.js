@@ -282,11 +282,22 @@ function Map(dims, players, seed) {
 
     // Contains useful info related to each player
     var player_info = {};
-    for (var player = 1; player <= players; player++) {
+    
+    //Human player properties
+    player_info[1] = {
+            ownedPIDs:[],
+            troops:0,
+            reserves: 0
+            ai: false
+        }
+    
+    //AI properties (every other player)
+    for (var player = 2; player <= players; player++) {
         player_info[player] = {
             ownedPIDs:[],
             troops:0,
             reserves: 0
+            ai: true
         }
     }
 
