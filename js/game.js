@@ -279,6 +279,7 @@ function Map(dims, players, seed) {
     // By default though, I think i'm going to stick with the new Graph based one.
 
     var HEURISTIC = 1;
+    var ai = true;
 
     // Contains useful info related to each player
     var player_info = {};
