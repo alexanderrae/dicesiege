@@ -597,7 +597,7 @@ var GameController = function (GameData) {
             for (var i = 0; i < attackP.troops; i++) attackPWR += getRandomInt(1,7);
             for (var i = 0; i < defendP.troops; i++) defendPWR += getRandomInt(1,7);
 
-            var success = attackPWR > defendPWR;
+            var success = attackPWR * Math.floor(Math.random()) > defendPWR Math.floor(Math.random());
 
             success = 1;
 
