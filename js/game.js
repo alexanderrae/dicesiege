@@ -288,7 +288,7 @@ function Map(dims, players, seed) {
     player_info[1] = {
             ownedPIDs:[],
             troops:0,
-            reserves: 0
+            reserves: 0,
             ai: false
         }
     
@@ -297,7 +297,7 @@ function Map(dims, players, seed) {
         player_info[player] = {
             ownedPIDs:[],
             troops:0,
-            reserves: 0
+            reserves: 0,
             ai: true
         }
     }
