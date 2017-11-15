@@ -1,8 +1,5 @@
-var Game = "";
-  console.log("started lop");
-
-while (Game!="") {
-  console.log("started ai");
+function startAI(Game) {
+    console.log("started ai");
   if (Game.Data.current_player != 1) {
     console.log("got past thisGame.Data..");
     var current_player = Game.Data.current_player;
@@ -18,5 +15,6 @@ while (Game!="") {
       }
     }
   }
- 
 }
+
+
