@@ -1,4 +1,5 @@
 while (true) {
+  console.log("started ai");
   if (Game.Data.current_player != 1) {
     var current_player = Game.Data.current_player;
     var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
