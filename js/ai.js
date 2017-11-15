@@ -1,6 +1,7 @@
 while (true) {
   console.log("started ai");
-  if (Game.Data.current_player != 1) {
+  if (thisGame.Data.current_player != 1) {
+    console.log("got past thisGame.Data..");
     var current_player = Game.Data.current_player;
     var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
     var n_players = Game.Data.n_players;
