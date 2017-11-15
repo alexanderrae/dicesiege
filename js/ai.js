@@ -1,4 +1,6 @@
-while (Game) {
+var Game = "";
+
+while (Game!="") {
   console.log("started ai");
   if (Game.Data.current_player != 1) {
     console.log("got past thisGame.Data..");
