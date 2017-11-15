@@ -1,7 +1,11 @@
 function startAI(GameData) {
     console.log("started ai");
     var Game = GameData;
-  while (Game.Data.current_player != 1) {
+  while (true) {
+      if (Game.Data.current_player != 1) {
+          sleep 1
+      }
+      else {
     console.log("got past thisGame.Data..");
     var current_player = Game.Data.current_player;
     var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
