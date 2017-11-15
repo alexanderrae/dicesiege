@@ -1,4 +1,5 @@
 var Game = "";
+  console.log("started lop");
 
 while (Game!="") {
   console.log("started ai");
