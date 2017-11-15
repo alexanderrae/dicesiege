@@ -35,7 +35,7 @@ function reinit() {
     Game = new GameController(GameData);
     
     //Start Artificial Intelligence
-    AI = startAI(Game);
+    startAI(Game);
 
 
 
