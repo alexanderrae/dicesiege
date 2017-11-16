@@ -12,6 +12,7 @@ function startAI(GameData) {
     
     for (i = 0; i < ownedPIDs.length; i++) {
       Game.Input.province.clicked(ownedPIDs[i]);
+        console.log("clicked " + ownedPIDs[i];
       var willAttack = (Math.random>0.5)?willAttack:true;
       var j = Game.Data.player_info[1].ownedPIDS;
       for (k = 0 ; k < j; k++) {
