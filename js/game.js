@@ -544,6 +544,11 @@ var GameController = function (GameData) {
             
             // Indicate whose turn it is
             Render.ReRender.current_turn.update(thisGame.Data.current_player);
+            
+            //Check if new player is AI
+            if (Game.current_player != 1) {
+                startAI(thisGame);
+            }
         },
         province: {
             clicked: function (clickedPID) {
