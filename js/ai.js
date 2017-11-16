@@ -3,7 +3,7 @@ function startAI(GameData) {
     var Game = GameData;
   while (true) {
       if (Game.Data.current_player != 1) {
-          sleep 1
+          sleep(1)
       }
       else {
     console.log("got past thisGame.Data..");
