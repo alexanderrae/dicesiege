@@ -6,6 +6,7 @@ function startAI(GameData) {
           console.log("Number of players: " + Game.Data.n_players);
           break;
       }
+      break;
       /*
       else {
     console.log("got past thisGame.Data..");
