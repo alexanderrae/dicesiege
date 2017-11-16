@@ -6,7 +6,7 @@ function startAI(GameData) {
     var current_player = Game.Data.current_player;
     console.log(current_player);
     var ownedPIDs = Game.Data.player_info[current_player].ownedPIDs;
-    console.log(ownedPIDs);
+    console.log(ownedPIDs.length());
     var n_players = Game.Data.n_players;
     console.log(n_players);
    /* 
