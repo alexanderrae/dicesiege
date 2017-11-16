@@ -4,8 +4,11 @@ function startAI(GameData) {
     console.log("Number of players: " + Game.Data.n_players);
     
     var current_player = Game.Data.current_player;
+    console.log(current_player);
     var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
+    console.log(ownedPIDS);
     var n_players = Game.Data.n_players;
+    console.log(n_players);
     
     for (i = 0; i < ownedPIDS; i++) {
       Game.Input.province.clicked(ownedPIDS[i]);
