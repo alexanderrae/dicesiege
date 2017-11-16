@@ -3,8 +3,10 @@ function startAI(GameData) {
     var Game = GameData;
   while (true) {
       if (Game.Data.current_player != 1 && Game.Data.current_player != "") {
-          sleep(1)
+          console.log("Number of players: " + Game.Data.n_players);
+          break;
       }
+      /*
       else {
     console.log("got past thisGame.Data..");
     var current_player = Game.Data.current_player;
@@ -20,5 +22,6 @@ function startAI(GameData) {
       }
     }
   }
+  */
   }
 }
