@@ -546,7 +546,7 @@ var GameController = function (GameData) {
             Render.ReRender.current_turn.update(thisGame.Data.current_player);
             
             //Check if new player is AI
-            if (Game.current_player != 1) {
+            if (thisGame.Data.current_player != 1) {
                 startAI(thisGame);
             }
         },
