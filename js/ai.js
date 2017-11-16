@@ -9,7 +9,7 @@ function startAI(GameData) {
     console.log(ownedPIDs);
     var n_players = Game.Data.n_players;
     console.log(n_players);
-    
+   /* 
     for (i = 0; i < ownedPIDs.length; i++) {
       Game.Input.province.clicked(ownedPIDs[i]);
         console.log("clicked " + ownedPIDs[i];
@@ -19,4 +19,5 @@ function startAI(GameData) {
       Game.Input.province.clicked(j[k]);
       }
     }
+    */
   }
