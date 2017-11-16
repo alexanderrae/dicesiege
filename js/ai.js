@@ -1,16 +1,8 @@
 function startAI(GameData) {
-    console.log("started ai");
+    console.log("Hello Dave");
     var Game = GameData;
     console.log("Number of players: " + Game.Data.n_players);
-/*
-  while (true) {
-      if (Game.Data.current_player != 1 && Game.Data.current_player != "") {
-          break;
-      }
-      break;
-      
-      else {
-    console.log("got past thisGame.Data..");
+    
     var current_player = Game.Data.current_player;
     var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
     var n_players = Game.Data.n_players;
@@ -24,6 +16,3 @@ function startAI(GameData) {
       }
     }
   }
-  }
-  */
-}
