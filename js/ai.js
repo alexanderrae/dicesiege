@@ -5,13 +5,13 @@ function startAI(GameData) {
     
     var current_player = Game.Data.current_player;
     console.log(current_player);
-    var ownedPIDS = Game.Data.player_info[current_player].ownedPIDS;
-    console.log(ownedPIDS);
+    var ownedPIDs = Game.Data.player_info[current_player].ownedPIDs;
+    console.log(ownedPIDs);
     var n_players = Game.Data.n_players;
     console.log(n_players);
     
-    for (i = 0; i < ownedPIDS; i++) {
-      Game.Input.province.clicked(ownedPIDS[i]);
+    for (i = 0; i < ownedPIDs; i++) {
+      Game.Input.province.clicked(ownedPIDs[i]);
       var willAttack = (Math.random>0.5)?willAttack:true;
       var j = Game.Data.player_info[1].ownedPIDS;
       for (k = 0 ; k < j; k++) {
