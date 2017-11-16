@@ -2,7 +2,7 @@ function startAI(GameData) {
     console.log("started ai");
     var Game = GameData;
   while (true) {
-      if (Game.Data.current_player != 1) {
+      if (Game.Data.current_player != 1 && Game.Data.current_player != "") {
           sleep(1)
       }
       else {
