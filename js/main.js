@@ -20,7 +20,7 @@ function init() {
     
     //Start Artificial Intelligence
   
-    startAI(Game);
+ //   startAI(Game);
     
     // TableRender();
     Render = new Renderer();
@@ -40,7 +40,7 @@ function reinit() {
     
     //Start Artificial Intelligence
   
-    startAI(Game);
+  //  startAI(Game);
 
 
     Render.reinit();
