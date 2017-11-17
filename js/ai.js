@@ -11,6 +11,14 @@ function startAI(GameData) {
     console.log(n_players);
     Game.Input.province.clicked(ownedPIDs[1]);
     console.log("Clicked " + ownedPIDs[1]);
+    
+    for ( j = 0 ; j < bordering.length ; j++) {
+        
+    var bordering = Game.Data.provinces[1].bordering;
+    Game.Input.province.clicked(bordering[j]);
+    }
+
+    
    /* 
     for (i = 0; i < ownedPIDs.length; i++) {
       Game.Input.province.clicked(ownedPIDs[i]);
