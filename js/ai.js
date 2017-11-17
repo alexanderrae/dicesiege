@@ -24,7 +24,7 @@ function startAI(GameData) {
                 Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
                 }
             }
-            Game.Input.next_turn();
         }
     }
+    Game.Input.next_turn();
 }
