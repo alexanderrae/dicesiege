@@ -18,7 +18,11 @@ function startAI(GameData) {
         else {
     Game.Input.province.clicked(ownedPIDs[i]);    
     var bordering = Game.Data.provinces[ownedPIDs[i]].bordering;    
-    Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
+            setTimeout(function(){ 
+
+Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
+            }, 3000);
+    
 
         }
         Game.Input.next_turn();
