@@ -12,7 +12,7 @@ function startAI(GameData) {
         }
         else {
     Game.Input.province.clicked(ownedPIDs[i]);    
-    var bordering = Game.Data.provinces[i].bordering;    
+    var bordering = Game.Data.provinces[ownedPIDs[i]].bordering;    
     var target = Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
         }
     }
