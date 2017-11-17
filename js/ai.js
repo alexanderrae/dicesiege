@@ -21,7 +21,14 @@ function startAI(GameData) {
                     Game.Input.province.clicked(ownedPIDs[i]);
                 }
                 else {
-                Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
+                    for ( j = 0 ; j < bordering.length ; j++ ) {
+                        if (Game.Data.provinces[bordering[j]].owner == current_player) {
+                            continue;
+                        }
+                        else {
+                            Game.Input.province.clicked(bordering[j]);
+                            break;
+                        }
                 }
             }
         }
