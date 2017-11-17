@@ -7,9 +7,13 @@ function startAI(GameData) {
     var n_players = Game.Data.n_players;
     
     for ( i = 0 ; i < ownedPIDs.length ; i++) {
-        
+        if (Game.Data.provinces[i].troops == 1) {
+            continue;
+        }
+        else {
     Game.Input.province.clicked(ownedPIDs[i]);    
-    var bordering = Game.Data.provinces[1].bordering;    
-    Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
+    var bordering = Game.Data.provinces[i].bordering;    
+    var target = Game.Input.province.clicked(bordering[Math.floor(Math.random()*(bordering.length+1))]);
+        }
     }
   }
