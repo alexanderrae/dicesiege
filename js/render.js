@@ -622,7 +622,7 @@ var Renderer = function () {
         r_objects["ui"] = {};
 
         // x,y coordinates of each thing are set later in resize
-
+/*
         // Seed display
         r_objects["ui"]["seed"] = new Primitives.Text(two, {
             x:120,
@@ -633,10 +633,11 @@ var Renderer = function () {
             bounding_box: true
         });
         r_objects["ui"]["seed"].updateClassList();
+*/
 
         // Reinitialize map button
         r_objects["ui"]["generate_new_map"] = new Primitives.Text(two, {
-            text:"New Game",
+            text:"Nyt spil",
             font_size: 30,
             classes:["button-text"],
             bounding_box: {
