@@ -34,4 +34,5 @@ function startAI(GameData) {
         }
     }
     Game.Input.next_turn();
+    }
 }
