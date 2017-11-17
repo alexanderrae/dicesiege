@@ -530,7 +530,7 @@ var Renderer = function () {
 
                         var provinceColorArray = hex2rgb(pallete[Game.Data.provinces[provinceID].owner]);
 
-                        var color1 = provinceColorArray.map(function(x){ return x += (255-x)/3; });
+                        var color1 = provinceColorArray.map(function(x){ return x += (255-x)/2; });
                         var color2 = provinceColorArray
 
                         var fillColor = "rgb("+pickHex(color1, color2, percent).join()+")";
