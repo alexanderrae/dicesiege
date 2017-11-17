@@ -129,7 +129,7 @@ var Renderer = function () {
 
             var color      = props.color     || "black"
             var font_size  = props.font_size || 12;
-            var font       = props.font      || "monospace"
+            var font       = props.font      || "Arial"
             var alignment  = props.alignment || "center"
 
             var text_obj = two.makeText(text, 0, 0, {
