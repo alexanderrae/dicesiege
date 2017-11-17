@@ -647,7 +647,7 @@ var Renderer = function () {
 
         // Current player indicator
         r_objects["ui"]["current_turn_text"] = new Primitives.Text(two, {
-            text:"Current Player",
+            text:"Din farve",
             font_size: 20,
             bounding_box: true
         });
@@ -659,7 +659,7 @@ var Renderer = function () {
 
         // Next turn button
         r_objects["ui"]["next_turn"] = new Primitives.Text(two, {
-            text:"Next Turn",
+            text:"Færdig tur",
             font_size: 30,
             classes:["button-text"],
             bounding_box: {
