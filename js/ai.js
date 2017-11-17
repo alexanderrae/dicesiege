@@ -5,7 +5,7 @@ function startAI(GameData) {
     var current_player = Game.Data.current_player;
     //Sanity check
     if (current_player == 1) {
-        break;
+        ;
     }
     else {
     var ownedPIDs = Game.Data.player_info[current_player].ownedPIDs;
