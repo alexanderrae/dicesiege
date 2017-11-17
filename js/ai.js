@@ -3,6 +3,11 @@ function startAI(GameData) {
     var Game = GameData;
     
     var current_player = Game.Data.current_player;
+    //Sanity check
+    if (current_player == 1) {
+        break;
+    }
+    else {
     var ownedPIDs = Game.Data.player_info[current_player].ownedPIDs;
     var n_players = Game.Data.n_players;
     
@@ -19,3 +24,4 @@ function startAI(GameData) {
         Game.Input.next_turn();
     }
   }
+}
