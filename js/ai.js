@@ -6,7 +6,7 @@ function startAI(GameData) {
     var ownedPIDs = Game.Data.player_info[current_player].ownedPIDs;
     var n_players = Game.Data.n_players;
     
-    for ( i = 0 ; i < ownedPIDs.length ; i++) {
+    for ( i = 0 ; i < ownedPIDs.length ; i++ ) {
         if (Game.Data.provinces[i].troops == 1) {
             continue;
         }
