@@ -18,10 +18,6 @@ function init() {
     // Start the game
     Game = new GameController(GameData);
     
-    //Start Artificial Intelligence
-  
- //   startAI(Game);
-    
     // TableRender();
     Render = new Renderer();
     Render.init.all();
@@ -37,11 +33,6 @@ function reinit() {
 
     // Start the game
     Game = new GameController(GameData);
-    
-    //Start Artificial Intelligence
-  
-  //  startAI(Game);
-
 
     Render.reinit();
 }
